@@ -2,8 +2,6 @@ import { shortenAddress } from "../../src/utils/shortenAddress";
 import { useMoralis, useNFTBalances } from "react-moralis";
 import React, {useEffect, useState} from "react";
 import { useMoralisWeb3Api } from "react-moralis";
-// import { NftCard } from "./NftCard";
-// const [nfts, setNfts] = useState([])
 
 const Account =  () =>{
   const { account, isAuthenticated, authenticate, isAuthenticating, logout, user } = useMoralis();
