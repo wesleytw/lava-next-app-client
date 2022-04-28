@@ -9,7 +9,7 @@ import { IoLogOutOutline } from "react-icons/io5";
 
 
 
-import { shortenAddress } from "../../src/utils/shortenAddress";
+import { shortenAddress } from "../src/utils/shortenAddress";
 import { useMoralis } from "react-moralis";
 // import Identicon from "../components/Identicon";
 const style = {
