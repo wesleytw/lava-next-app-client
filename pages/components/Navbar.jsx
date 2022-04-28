@@ -7,9 +7,6 @@ import { BsInfoCircle } from "react-icons/bs";
 import { AiFillPlayCircle } from "react-icons/ai";
 import { IoLogOutOutline } from "react-icons/io5";
 
-import { AiOutlineSearch } from 'react-icons/ai'
-import { CgProfile } from 'react-icons/cg'
-import { MdOutlineAccountBalanceWallet } from 'react-icons/md'
 
 
 import { shortenAddress } from "../../src/utils/shortenAddress";
