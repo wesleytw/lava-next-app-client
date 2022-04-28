@@ -12,7 +12,7 @@ import { CgProfile } from 'react-icons/cg'
 import { MdOutlineAccountBalanceWallet } from 'react-icons/md'
 
 
-import { shortenAddress } from "../src/utils/shortenAddress";
+import { shortenAddress } from "../../src/utils/shortenAddress";
 import { useMoralis } from "react-moralis";
 // import Identicon from "../components/Identicon";
 const style = {

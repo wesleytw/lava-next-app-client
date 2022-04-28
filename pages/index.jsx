@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Welcome, Market, Transactions, Loader, Services, Footer, Account } from '../components';
+import { Navbar, Welcome, Market, Transactions, Loader, Services, Footer, Account } from './components';
 
 
 
