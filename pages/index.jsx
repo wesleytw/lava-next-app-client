@@ -8,11 +8,13 @@ const  App = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
+      <Welcome/>
       <Footer/>
     </div>
   );
 }
 export default App
+
 
 
 // import type { NextPage } from 'next'

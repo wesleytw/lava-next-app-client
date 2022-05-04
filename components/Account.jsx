@@ -59,6 +59,7 @@ const Account =  () =>{
               <div className=" mx-auto bg-[#000000] px-4 ">
                 {/* <h1>ooooogggggggggggggggggggggggggg</h1> */}
                 <p>${nft.token_address}</p>
+                
                 {/* <img src=nft. */}
 
               </div>
