@@ -49,8 +49,8 @@ const Navbar = () => {
 
 
   return (
-    <nav className="fixed z-50 bg-[#ffffff] w-full md:justify-center justify-between items-center p-4 flex shadow">
-      <div className="md:flex-[0.5] flex-initial justify-center items-center cursor-pointer">
+    <nav className="sticky top-0 left-0 right-0 z-50 bg-[#ffffff] w-full md:justify-center  items-center p-4 flex shadow">
+      <div className="md:flex-[0.5] flex-initial  justify-between items-center cursor-pointer">
         <Link href="/" >
           <a className={style.logoText} >
             LAVA🌋
@@ -67,8 +67,8 @@ const Navbar = () => {
         <Link href="/"  >
           <div className={style.headerItem}> Stat </div>
         </Link>
-        <Link href="/"  >
-          <div className={style.headerItem}> Create </div>
+        <Link href="/demo"  >
+          <div className={style.headerItem}> Demo </div>
         </Link>
       </div>
       <div className="text-black md:flex hidden list-none flex-row justify-between items-center flex-initial font-semibold">

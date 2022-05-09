@@ -3,7 +3,9 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
     './src/**/*.{jsx,html,js}',
-    './src/components/**/*.{jsx,html,js}'
+    './src/components/**/*.{jsx,html,js}',
+    './node_modules/flowbite/**/*.js',
+    './node_modules/tw-elements/dist/js/**/*.js'
   ],
   theme: {
     extend: {
@@ -47,5 +49,11 @@ module.exports = {
 
   plugins: [
     // require("@tailwindcss/forms")
+    // require('flowbite/plugin'),
+    // require('tw-elements/dist/plugin')
+    require('daisyui')
   ],
+  daisyui: {
+    base:false
+  }
 }

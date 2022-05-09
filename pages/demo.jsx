@@ -19,7 +19,7 @@ const Account = () => {
 		getNFTBalances({
 			params: {
 				chain: "rinkeby",
-				address: user.get('ethAddress')
+				address: "0x2369B8b01d0aC861027db6D53641856ffAeF3C6C"
 			}
 		})
 	}, [isAuthenticated])
@@ -92,3 +92,45 @@ export default Account
 
 
 
+
+
+// import { useState } from 'react'
+// import { Dialog } from '@headlessui/react'
+// import { Navbar } from "../components";
+
+
+// function MyDialog() {
+//   let [isOpen, setIsOpen] = useState(true)
+
+//   return (
+//     <div className="">
+
+// <Navbar />
+  
+// <div class="w-60 h-24 border-2 rounded-md mx-auto bg-red-700">
+//     <div class="flex animate-pulse flex-row items-center h-full justify-center space-x-5">
+//         <div class="w-12 bg-gray-300 h-12 rounded-full ">
+//         </div>
+//         <div class="flex flex-col space-y-3">
+//             <div class="w-36 bg-gray-300 h-6 rounded-md ">
+//             </div>
+//             <div class="w-24 bg-gray-300 h-6 rounded-md ">
+//             </div>
+//         </div>
+//     </div>
+// </div>
+// <button className="btn">Hello daisyUI</button>
+
+// <label for="my-modal-4" class="btn modal-button">open modal</label>
+
+// <input type="checkbox" id="my-modal-4" class="modal-toggle" />
+// <label for="my-modal-4" class="modal cursor-pointer">
+//   <label class="modal-box relative" for="">
+//     <h3 class="text-lg font-bold">Congratulations random Interner user!</h3>
+//     <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+//   </label>
+// </label>
+// </div>
+//   )
+// }
+// export default MyDialog

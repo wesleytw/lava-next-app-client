@@ -1,15 +1,26 @@
 import React from 'react';
+import Head from "next/head"
 import { Navbar, Welcome, Market, Transactions, Loader, Services, Footer, Account } from '../components';
+// import 'flowbite';
+// import 'tw-elements'; removed, cause no react example
+import { useState } from 'react'
+import { Dialog } from '@headlessui/react'
 
-
-
-const  App = () => {
-
+const App = () => {
+  let [isOpen, setIsOpen] = useState(true)
   return (
     <div className="min-h-screen">
+      <Head>
+        <title>My page title</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.5/dist/flowbite.min.css" />
+      </Head>
+
+      <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
       <Navbar />
-      <Welcome/>
-      <Footer/>
+      <Welcome />
+      <Footer />
+      
     </div>
   );
 }
