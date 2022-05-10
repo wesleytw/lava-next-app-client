@@ -13,16 +13,19 @@ const Account = () => {
 	const { account, isAuthenticated, authenticate, isAuthenticating, logout, user } = useMoralis();
 	const { getNFTBalances, data } = useNFTBalances();
 
+	//
+	let demoAccount = "0x2369B8b01d0aC861027db6D53641856ffAeF3C6C"
+	// 
+
 	useEffect(() => {
 		console.log('isAuthenticated?', isAuthenticated)
-		if (!isAuthenticated) return
 		getNFTBalances({
 			params: {
 				chain: "rinkeby",
-				address: "0x2369B8b01d0aC861027db6D53641856ffAeF3C6C"
+				address: demoAccount
 			}
 		})
-	}, [isAuthenticated])
+	}, [])
 
 	const verifyCollection = (tokenAddress) => {
 		if (tokenAddress == "0x3bed33dab84a9415198d3fdb452e94829e16c1b6") {
@@ -81,6 +84,7 @@ const Account = () => {
 					</div>
 				))}
 				{data && console.log(data.result)}
+				
 			</div>
 		</>
 	)

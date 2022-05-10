@@ -37,9 +37,7 @@ const Account = () => {
 			<Head>
 				<title>My page title</title>
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
-				<link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.5/dist/flowbite.min.css" />
 			</Head>
-			<script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
 			{/* px-28 pt-28 md:px-56 md:py-8 lg:px-96 lg:py-16 */}
 			{/* bg-[#303339] flex-auto w-[14rem] h-[22rem] my-10 mx-5 rounded-2xl overflow-hidden cursor-pointer */}
 			<Navbar />

@@ -20,7 +20,7 @@ const style = {
 }
 
 const Navbar = () => {
-  const [ myuser, setMyuser ] = useState([])
+  const [myuser, setMyuser] = useState([])
   const { account, isAuthenticated, authenticate, isAuthenticating, logout, user } = useMoralis();
   const login = async () => {
     if (!isAuthenticated) {
@@ -33,7 +33,7 @@ const Navbar = () => {
         .catch(function (error) {
           console.log(error);
         });
-        console.log('auth', isAuthenticated)
+      console.log('auth', isAuthenticated)
     }
   };
   const logOut = async () => {

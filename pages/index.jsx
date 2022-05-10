@@ -1,8 +1,7 @@
 import React from 'react';
 import Head from "next/head"
 import { Navbar, Welcome, Market, Transactions, Loader, Services, Footer, Account } from '../components';
-// import 'flowbite';
-// import 'tw-elements'; removed, cause no react example
+
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 
