@@ -10,12 +10,9 @@ const App = () => {
   return (
     <div className="min-h-screen">
       <Head>
-        <title>My page title</title>
+        <title>LAVA🌋</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.5/dist/flowbite.min.css" />
-      </Head>
-
-      <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
+        </Head>
       <Navbar />
       <Welcome />
       <Footer />

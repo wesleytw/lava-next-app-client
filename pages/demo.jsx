@@ -7,22 +7,21 @@ import { MdOutlineVerified } from "react-icons/md";
 
 const Account = () => {
 
-	const style = {
-		cardWapper: 'transition: transform 0.6s ease 0.1s; transform-style: preserve-3d; width: 224.36px; height: 312px;'
-	}
 	const { account, isAuthenticated, authenticate, isAuthenticating, logout, user } = useMoralis();
 	const { getNFTBalances, data } = useNFTBalances();
 
 	//
 	let demoAccount = "0x2369B8b01d0aC861027db6D53641856ffAeF3C6C"
 	// 
-
+let id=[1,2]
 	useEffect(() => {
 		console.log('isAuthenticated?', isAuthenticated)
 		getNFTBalances({
 			params: {
 				chain: "rinkeby",
-				address: demoAccount
+				address: demoAccount,
+				token_addresses: "0x3bed33dab84a9415198d3fdb452e94829e16c1b6",
+				token_id: 0
 			}
 		})
 	}, [])
@@ -40,9 +39,7 @@ const Account = () => {
 			<Head>
 				<title>My page title</title>
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
-				<link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.5/dist/flowbite.min.css" />
 			</Head>
-			<script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
 			{/* px-28 pt-28 md:px-56 md:py-8 lg:px-96 lg:py-16 */}
 			{/* bg-[#303339] flex-auto w-[14rem] h-[22rem] my-10 mx-5 rounded-2xl overflow-hidden cursor-pointer */}
 			<Navbar />
@@ -84,7 +81,15 @@ const Account = () => {
 					</div>
 				))}
 				{data && console.log(data.result)}
-				
+
+				<label for="my-modal-4" class="btn modal-button bg-green-600 p-[1px]">open modal</label>
+				<input type="checkbox" id="my-modal-4" class="modal-toggle" />
+				<label for="my-modal-4" class="modal cursor-pointer ">
+					<label class="modal-box relative bg-green-600 rounded-none p-[1]" for="">
+						<h3 class="text-lg font-bold">Congratulations random Interner user!</h3>
+						<p className="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+					</label>
+				</label>
 			</div>
 		</>
 	)
@@ -110,7 +115,7 @@ export default Account
 //     <div className="">
 
 // <Navbar />
-  
+
 // <div class="w-60 h-24 border-2 rounded-md mx-auto bg-red-700">
 //     <div class="flex animate-pulse flex-row items-center h-full justify-center space-x-5">
 //         <div class="w-12 bg-gray-300 h-12 rounded-full ">

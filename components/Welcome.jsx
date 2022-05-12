@@ -18,7 +18,7 @@ const Welcome = () => {
             <br /> Rental Protocol
           </h1>
             <p className="text-left mt-5 text-[#505050] font-light md:w-9/12 w-11/12 text-base">
-              Explore the crypto world. Buy and sell cryptocurrencies easily on Krypto.
+              Explore the NFT world. Lend and borrow NTFs easily on LAVA.
           </p>
           </div>
 

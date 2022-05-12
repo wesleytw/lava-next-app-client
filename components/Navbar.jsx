@@ -64,7 +64,7 @@ const Navbar = () => {
         <Link href="/account" >
           <div className={style.headerItem}> Account </div>
         </Link>
-        <Link href="/"  >
+        <Link href="/stat"  >
           <div className={style.headerItem}> Stat </div>
         </Link>
         <Link href="/demo"  >
